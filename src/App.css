@@ -1,0 +1,14 @@
+
+.main-container {
+    width: 100vw;
+    height: 92vh;
+    background-color: #0a1612;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+    width: 100vw;
+    height: 100%
+}

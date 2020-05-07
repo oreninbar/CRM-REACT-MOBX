@@ -1,0 +1,30 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    column-gap: 7px;
+    width: 100%;
+    font-size: large;
+    background: #000;
+    text-align: center;
+    height:7vh;
+    text-transform: uppercase;
+}
+
+.page-btn{
+    padding: 3px;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page-btn:hover{
+    background-color:#9aa3a0;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}

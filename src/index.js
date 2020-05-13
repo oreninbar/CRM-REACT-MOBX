@@ -6,9 +6,15 @@ import { GeneralStore } from './stores/generalStore.js'
 import { Provider } from 'mobx-react'
 
 const generalStore = new GeneralStore()
-generalStore.initCustomersList()
-generalStore.initOwnersLists()
-generalStore.initConnectionsLists()
+
+generalStore.initCRM()
+// generalStore.initCustomersList()
+// generalStore.initOwnersLists()
+// generalStore.initConnectionsLists()
+// generalStore.getMonth()
+// generalStore.total_Emails()
+// generalStore.monthly_New_Clients()
+
 
 let stores = {generalStore}
 

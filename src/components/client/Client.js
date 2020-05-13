@@ -5,8 +5,6 @@ import Item from '../item/Item.js'
 import backward from '../../icons/back.png'
 import forward from '../../icons/forward.png'
 
-
-
 const Client = inject("generalStore")(observer((props) => {
 
     const [categoryFilter, setCategoryFilter] = useState("")
@@ -35,8 +33,6 @@ const Client = inject("generalStore")(observer((props) => {
         if (pageNumber > 20)
             setPageNumber(pageNumber - 20)
     }
-
-
 
     return (
         

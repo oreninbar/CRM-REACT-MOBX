@@ -1,0 +1,25 @@
+.header-item {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+    'img number'
+    'title title'
+}
+
+.round-image{
+    grid-area: 'img';
+    justify-self: center;
+
+}
+.number-item{
+    grid-area: 'number';
+    justify-self: center;
+}
+.title-item{
+    grid-area: 'title';
+    text-align: center;
+    grid-column: 1/ 3 ; 
+}

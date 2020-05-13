@@ -1,0 +1,23 @@
+.container-dashboard { 
+    height: 100%;
+    width:100vw;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.data-header {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.container-charts {
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 40% 60%;
+}
+

@@ -9,6 +9,7 @@ const Actions = inject("generalStore")(observer((props) => {
 
     const [inputs, setInputs] = useState({ firstName: "", lastName: "", email: "", owner: "", firstContact: "", country: "", sold: 0 })
     const [updateInput, setUpdateInput] = useState({ name: "", updateOwner: "", emailType: "", updateSold: 0 })
+
     const [messageState, setMessageState] = useState(null)
     const [message, setMessage] = useState(null)
 
@@ -20,7 +21,7 @@ const Actions = inject("generalStore")(observer((props) => {
         if (e.target.name !== "updateSold")
             setUpdateInput({ ...updateInput, [e.target.name]: e.target.value })
         else {
-            updateInput.updateSold? setUpdateInput({ ...updateInput, updateSold : 0 }):  setUpdateInput({ ...updateInput, updateSold :1 })
+            updateInput.updateSold ? setUpdateInput({ ...updateInput, updateSold: 0 }) : setUpdateInput({ ...updateInput, updateSold: 1 })
         }
     }
 
@@ -74,7 +75,7 @@ const Actions = inject("generalStore")(observer((props) => {
                 </div>
                 <div className="row">
                     <h3 className="title title-update" >Had sale?</h3>
-                    <input type="checkbox" className="input-checkbox input-update" name="updateSold" value={updateInput.updateSold}  onChange={handleInputUpdate}/>
+                    <input type="checkbox" className="input-checkbox input-update" name="updateSold" value={updateInput.updateSold} onChange={handleInputUpdate} />
                 </div>
                 <button id="btn-edit-client" className="btn" onClick={updateClient}>Edit Client</button>
             </div>
